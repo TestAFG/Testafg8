@@ -1,0 +1,76 @@
+[
+  {
+    "entity": "2Kitchen_1Hall",
+    "price": 100000
+  },
+  {
+    "entity": "2Hall_1room",
+    "price": 50000
+  },
+  {
+    "entity": "2Hall_1Kitchen",
+    "price": 150000
+  },
+  {
+    "entity": "Kitchen_Hall_Room",
+    "price": 200000
+  },
+  {
+    "entity": "BHK",
+    "price": 5000000
+  },
+  {
+    "entity": "Basic",
+    "bhk_price": 2000000,
+    "kitchen_price": 100000,
+    "wardrobe_price": 100000
+  },
+  {
+    "entity": "Luxury",
+    "bhk_price": 5000000,
+    "kitchen_price": 200000,
+    "wardrobe_price": 200000
+  },
+  {
+    "entity": "Premium",
+    "bhk_price": 3000000,
+    "kitchen_price": 200000,
+    "wardrobe_price": 200000
+  },
+  {
+    "entity": "L-shaped",
+    "price": 100000
+  },
+  {
+    "entity": "U-shaped",
+    "price": 200000
+  },
+  {
+    "entity": "Parallel",
+    "price": 300000
+  },
+  {
+    "entity": "Straight",
+    "price": 400000
+  },
+  {
+    "entity": "size",
+    "price": 100000
+  },
+  {
+    "entity":"Sliding",
+    "price": 100000
+  },
+  {
+    "entity":"Swing",
+    "price": 200000
+  },
+  {
+    "entity":"length_width",
+    "price": 150000
+  },
+  {
+    "entity":"length",
+    "price": 100000
+  }
+]

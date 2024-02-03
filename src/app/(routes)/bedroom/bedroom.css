@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    padding: 1px 1px 1px 1px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe6e6;
+}
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span {
+    font-family: sans-serif;
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+.navbar{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+.navbar ul li:after::after{
+    width: 100%;
+}
+.navbar .fa{
+    margin-right: 6px;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navbar ul{
+        padding: 30px;
+    }
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    
+    
+}
+.swiper{
+    width: 95%;
+    height: 80%;
+}
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-text{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background:  #fff;
+}
+
+/*----cart---*/
+.li{
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.5);  
+}
+.li h1{
+    padding-top: 30px;
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+}
+.li p{
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.lii{
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+.lii img{
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.lii img:hover{
+    transform: scale(1.2);
+}
+.lii h2{
+    padding: 20px;
+}
+.lii p{
+    font-size: 20px
+}
+.bm{
+    padding: 30px;
+}
+.bm button{
+    padding-top: 0;
+    font-size: 20px;
+    border-radius: 5%;
+    background: transparent;
+    text-decoration: none;
+    padding: 20px;
+}
+.bm button:hover{
+    border: 2px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    border-radius: 30px;
+}
+/*----Footer---*/
+.waviy1 {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy1 span {
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy1 {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right,#00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 20%;
+    padding: 10px;
+    font-size: 15px;
+}
+.col1 h1{
+    font-size: 40px;
+}
+.col1 p{
+    font-size: 30px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h3{
+    width: fit-content;
+    margin: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 2px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+form{
+    padding-bottom:  15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .fa{
+    font-size: 18px;
+    margin-right: 20px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fa{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons{
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 20px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media(max-width:700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}

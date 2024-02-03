@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+model ConsultTable {
+  id        Int      @id @default(autoincrement())
+  userId    String   
+  name      String
+  email     String
+  phone     String
+  location  String
+  Budget    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model estForm {
+  id        Int      @id @default(autoincrement())
+  userId    String  
+  package   String
+  bhk       Int
+  room      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model est1Form {
+  id        Int      @id @default(autoincrement())
+  userId    String  
+  package   String
+  shape     String
+  length    Int
+  width     Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model est2Form {
+  id        Int      @id @default(autoincrement())
+  userId    String  
+  package   String
+  type      String
+  length    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
